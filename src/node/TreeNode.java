@@ -10,12 +10,22 @@ public class TreeNode {
     private int data;
     private TreeNode left;
     private TreeNode right;
+    private int height;
 
     // constructor
     public TreeNode(int data) {
         this.data = data;
         left = null;
         right = null;
+        height = 0;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public int getData() {
